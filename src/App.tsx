@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.css'
-
-function App (): any {
+import InputField from './components/InputField'
+const App = (): React.ReactElement => {
   return (
-    <div className="App">
-      Hello World
+    <div className='app'>
+      <span className='heading'>Todo</span>
+      <InputField/>
     </div>
   )
 }
