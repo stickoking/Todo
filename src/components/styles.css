@@ -43,3 +43,60 @@
     transform: scale(0.8);
     box-shadow: 0 0 5px black;
 }
+
+.todos {
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   width: 75%;
+   padding: 15px;
+}
+.todos__single {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url("https://img.freepik.com/free-vector/flat-design-abstract-background_23-2149103997.jpg?w=1380&t=st=1665256642~exp=1665257242~hmac=4154c3ca47617aa00e8981cee89961eae8600a898761871c44050323c4b59514");
+    transition: 0.2s;
+}
+
+.todos__single--text {
+    flex: 1;
+    padding: 5;
+    border: none;
+    font-size: 20px;
+}
+
+.todos__single--text:focus {
+    outline: none;
+}
+
+.icon {
+    margin-left: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+ @media (max-width: 1200px) {
+    .todos {
+      width: 75%;
+    }
+    .icon {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .todos__single--text {
+        font-size: 15px;
+    }
+    
+  }
+  
+  @media (max-width: 800px) {
+    .input {
+      width: 85%;
+    }
+    .container {
+      width: 85%;
+      flex-direction: column;
+    }
+  }
